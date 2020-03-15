@@ -1,0 +1,215 @@
+body {
+	font-family: 'Poppins';
+}
+header {
+	box-shadow: 0 4px 13px -2px rgb(100,100,100, 0.5);
+	margin-bottom: 50px;
+}
+header nav a{
+	color: #EE6C4D;
+}
+header nav a:hover {
+	text-decoration: none;
+	color: #1B1B1E;
+	transition: 1s;
+}
+header .logo img {
+	width: 160px;
+}
+header .button {
+	color: #EE6C4D;
+	border-color: #EE6C4D;
+	border-width: 3px;
+	width: 120px;
+	border-radius: 30px;
+}
+header .button:hover {
+	background: #EE6C4D;
+	border-color: #EE6C4D;
+}
+.arts {
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+.articles-div {
+	display: flex;
+}
+.articles article {
+	height: auto;
+	margin-left: 30px;
+	padding: 0;
+}
+.articles article:hover > .card{
+	cursor: pointer;
+	background: #EE6C4D;
+	transition: .5s;
+}
+.articles article:hover > .card {
+	transform: translateY(-5px) scale(1.005) translateZ(0);
+	box-shadow: 0 9px 20px 5px rgb(100,100,100, 0.5);
+}
+.articles article:hover > .card .card-title,
+.articles article:hover > .card .card-text,
+.articles article:hover > .card .info div span,
+.articles article:hover > .card .more {
+	color: #fff;
+	transition: all .5s ease-out;
+}
+.articles article:hover > .card .info div svg{
+	fill: #fff;
+	transition: .5s;
+}
+.articles article:nth-child(1) {
+	margin-left: 0;
+}
+.articles article .card {
+	box-shadow: 0 4px 13px -2px rgb(100,100,100, 0.5);
+	border-radius: 30px;
+	width: 100%;
+	background: transparent;
+}
+.articles article .card-img-top {
+	border-radius: 30px 30px 0 0;
+}
+.articles article .card .card-title {
+	color: #EE6C4D;
+	font-weight: 700;
+	font-size: 28px;
+	margin-bottom: 18px;
+}
+.articles article .card .info {
+	margin-bottom: 16px;
+	display: flex;
+}
+.articles article .card .info div:nth-child(1) {
+	margin-left: 0;
+	cursor: pointer;
+}
+.articles article .card .info div {
+	display: flex;
+	margin-left: 15px;
+}
+.articles article .card .info .icon {
+	width: 20px;
+	height: 20px;
+	fill: #EE6C4D;
+}
+.articles article .card .info span {
+	font-size: 14px;
+	color: #1B1B1E;
+	margin-left: 8px;
+}
+.articles article .card .card-text {
+	font-size: 15px;
+	color: #1B1B1E;
+}
+.articles article .card .more {
+	font-weight: bold;
+	color: #EE6C4D;
+}
+.articles article .card .more:hover {
+	text-decoration: none;
+	color: #1B1B1E;
+	transition: 1s;
+}
+.aside {
+	padding-left: 30px;
+}
+.aside .card:nth-child(1) {
+	margin-top: 0;
+}
+.aside .card{
+	background: transparent;
+	border: 0;
+	margin-top: -40px;
+}
+.aside .card .card-title {
+	margin-bottom: 20px;
+	color: #EE6C4D;
+	font-weight: 700;
+	font-size: 28px;
+}
+.aside .card .card-text {
+	color: #293241;
+}
+.aside .card .button {
+	border: 0;
+	border-radius: 30px;
+	width: 130px;
+	font-size: 16px;
+    padding: 0.575rem 1rem;
+	background: #EE6C4D;
+}
+.aside .card .button:hover {
+	background: transparent;
+	border: 2px solid #EE6C4D;
+	color: #EE6C4D;
+	transition: .5s;
+}
+.aside .card .search-input {
+	border-color: #EE6C4D;
+	border-width: 2px;
+	color: #EE6C4D;
+	border-radius: 130px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+}
+.aside .search form .form-group {
+	display: flex;
+	align-items: center;
+}
+.aside .search form button {
+	background: transparent;
+	border: 0;
+	position: absolute;
+	right: 35px;
+}
+.aside .search form button svg{
+	fill: #EE6C4D;
+}
+.aside .categories ul li {
+	list-style-image: url('../img/icons/ul.png');
+	padding-left: 10px;
+	margin-top: 20px;
+}
+.aside .categories ul li a {
+	color: #1B1B1E;
+}
+@media only screen and (max-width: 1000px) {
+.articles-div {
+	flex-direction: column;
+}
+.articles article {
+	margin-left: 0;
+	margin-top: 30px;
+}
+}
+@media only screen and (max-width: 991px) {
+.aside {
+	padding-left: 0;
+}
+}
+.articles .pagination {
+	justify-content: center;
+	margin: 30px;
+}
+.articles .pagination ul li:nth-child(1) {
+	margin-left: 0;
+}
+.articles .pagination ul li{
+	margin-left: 30px;
+}
+.articles .pagination .page-link {
+	border: 0;
+	color: #1B1B1E;
+}
+.articles .pagination .page-link:hover {
+	color: #fff;
+	transition: .5s;
+	background: #EE6C4D;
+}
+.articles .pagination .active {
+	color: #fff;
+	background: #EE6C4D;
+}
