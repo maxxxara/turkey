@@ -42,7 +42,7 @@ header .button:hover {
 }
 article.col-md-3{
 	padding-left:10px;
-	min-width: 300px;
+	min-width: 260px;
 }
 .articles article:hover > .card{
 	cursor: pointer;
