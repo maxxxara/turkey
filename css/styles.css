@@ -150,6 +150,9 @@ article.col-md-3{
 	color: #EE6C4D;
 	transition: .5s;
 }
+.main-color{
+	color: #EE6C4D!important;
+}
 .aside .card .search-input {
 	border-color: #EE6C4D;
 	border-width: 2px;
@@ -159,17 +162,17 @@ article.col-md-3{
     padding-bottom: 20px;
     padding-left: 25px;
 }
-.aside .search form .form-group {
+.aside .search .form .form-group {
 	display: flex;
 	align-items: center;
 }
-.aside .search form button {
+.aside .search .form button {
 	background: transparent;
 	border: 0;
 	position: absolute;
 	right: 35px;
 }
-.aside .search form button i{
+.aside .search .form button i{
 	color: #EE6C4D;
 	font-size: 18px;
 }
@@ -401,4 +404,25 @@ article.col-md-3{
 }
 .fa-times{
 	display: none;
+}
+.pointer{
+	cursor: pointer;
+}
+#showdetails>div>select{
+	border-color: #EE6C4D;
+	border-width: 2px;
+	color: #EE6C4D;
+	border-radius: 12px;
+	padding: 5px;
+	width: 100%;
+	
+}
+.nums{
+	border-color: #EE6C4D;
+	border-width: 2px;
+	color: #EE6C4D;
+	border-radius: 12px;
+	padding: 5px;
+	width: 100%;
+	
 }
