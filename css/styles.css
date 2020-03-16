@@ -189,6 +189,12 @@ article.col-md-3{
 	flex-direction: column;
 	width: 100%!important;
 }
+@media only screen and (max-width: 770px) {
+#submenu{
+	padding-left:10px;
+	width: 360px!important;
+	max-width: 100%!important;
+}
 .articles article {
 	margin-left: 0;
 	margin-top: 30px;
@@ -388,7 +394,7 @@ article.col-md-3{
 	position: absolute;
 	right: 0;
 	top: 74px;
-	height: calc(100vh - 74px);
+	min-height: calc(100vh - 74px);
 	background-color: white;
 	z-index: 999;
 }
