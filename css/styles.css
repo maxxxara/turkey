@@ -33,11 +33,16 @@ header .button:hover {
 }
 .articles-div {
 	display: flex;
+	flex-wrap: wrap;
 }
 .articles article {
 	height: auto;
-	margin-left: 30px;
+	margin-bottom: 20px;
 	padding: 0;
+}
+article.col-md-3{
+	padding-left:10px;
+	min-width: 300px;
 }
 .articles article:hover > .card{
 	cursor: pointer;
@@ -87,7 +92,7 @@ header .button:hover {
 }
 .articles article .card .info div {
 	display: flex;
-	margin-left: 15px;
+	margin-left: 10px;
 }
 .articles article .card .info i{
 	font-size: 20px;
@@ -179,6 +184,7 @@ header .button:hover {
 @media only screen and (max-width: 770px) {
 .articles-div {
 	flex-direction: column;
+	width: 100%!important;
 }
 .articles article {
 	margin-left: 0;
@@ -198,7 +204,7 @@ header .button:hover {
 	margin-left: 0;
 }
 .articles .pagination ul li{
-	margin-left: 30px;
+	margin-left: 4px;
 }
 .articles .pagination .page-link {
 	border: 0;
@@ -372,4 +378,27 @@ header .button:hover {
 	.crud .card-header {
 		flex-direction: column;
 	}
+}
+
+#submenu{
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 74px;
+	height: calc(100vh - 74px);
+	background-color: white;
+	z-index: 999;
+}
+.menubars{
+	position: absolute;
+	right: 20px;
+	top: 100px;
+	z-index: 9999
+}
+.menubars>i{
+	color:#EE6C4D;
+	
+}
+.fa-times{
+	display: none;
 }
